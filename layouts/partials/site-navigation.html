@@ -11,9 +11,9 @@
     <div class="flex-l items-center">
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <ul class="pl0 mr3">
+        <ul class="pl0 ml-1 mr-3">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib ml3 pa1 {{ if $currentPage.IsMenuCurrent "main" . }}bb b--white-90{{ end }}">
+          <li class="list f5 f4-ns fw4 dib mr3 ph1 pb1 bb {{ if $currentPage.IsMenuCurrent "main" . }}b--white-90{{ else }} b--transparent {{ end }}">
             <a class="hover-white no-underline white-90 tshadow-1" href="{{ .URL }}" title="{{ .Name }} page">
               {{ .Name }}
             </a>
