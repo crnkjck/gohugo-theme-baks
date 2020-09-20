@@ -1,6 +1,12 @@
 .lato {
     font-family: Lato, sans-serif;
 }
+.merriweather-sans {
+    font-family: "Merriweather Sans", sans-serif;
+}
+.source-sans-pro {
+    font-family: "Source Sans Pro", sans-serif;
+}
 .tshadow-1 {
     text-shadow: 0 0 .16667em rgba( 0, 0, 0, .33333 );
 }
