@@ -1,0 +1,15 @@
+.lato {
+    font-family: Lato, sans-serif;
+}
+.tshadow-1 {
+    text-shadow: 0 0 .16667em rgba( 0, 0, 0, .33333 );
+}
+.tshadow-2 {
+    text-shadow: 0 0 .083333em rgba( 0, 0, 0, .5 );
+}
+.ml-1 {
+    margin-left: -0.25rem;
+}
+.mr-3 {
+    margin-right: -1rem;
+}
