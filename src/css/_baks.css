@@ -8,10 +8,10 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 .tshadow-1 {
-    text-shadow: 0 0 .16667em rgba( 0, 0, 0, .33333 );
+    text-shadow: 0 0 .33333em rgba( 0, 0, 0, .66667 );
 }
 .tshadow-2 {
-    text-shadow: 0 0 .083333em rgba( 0, 0, 0, .5 );
+    text-shadow: 0 0 .083333em rgba( 0, 0, 0, .75 );
 }
 .ml-1 {
     margin-left: -0.25rem;

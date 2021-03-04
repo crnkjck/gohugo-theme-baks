@@ -1,19 +1,18 @@
-<nav class="pv3 ph3 ph4-ns" role="navigation">
+<nav class="pv1 ph3 ph4-ns bg-black-50" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw5 hover-white no-underline white-90 tshadow-1 dib">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw5 hover-white no-underline white-90 tshadow-1 dib mt3 mb0 mb3-l">
       {{ with .Site.Params.site_logo }}
-        <img src="{{ . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-      {{ else }}
-        {{ .Site.Title }}
+        <img src="{{ . }}" class="h2 mw5-ns mr2 fl br1" style="margin-top: -0.125rem;" alt="{{ $.Site.Title }}" />
       {{ end }}
+      {{ .Site.Title }}
     </a>
     {{ $currentPage := . }}
     <div class="flex-l items-center">
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <ul class="pl0 ml-1 mr-3">
+        <ul class="pl0 ml-1 mr-3 mv3 pv0">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib mr3 ph1 pb1 bb {{ if $currentPage.IsMenuCurrent "main" . }}b--white-90{{ else }} b--transparent {{ end }}">
+          <li class="list f5 f4-ns fw4 dib mr3 ph1 pv1 bb {{ if $currentPage.IsMenuCurrent "main" . }}b--white-90{{ else }} b--transparent {{ end }}">
             <a class="hover-white no-underline white-90 tshadow-1" href="{{ .URL }}" title="{{ .Name }} page">
               {{ .Name }}
             </a>

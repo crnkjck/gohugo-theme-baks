@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 center measure-wide lh-copy mid-gray">
+  <article class="cf pa3 pa4-l f5 f4-ns center mw7 lh-copy dark-gray nested-links">
     {{ .Content }}
   </article>
   {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
@@ -21,7 +21,7 @@
           {{ end }}
         </h2>
         {{ if .Content }}
-          <div class="measure-wide center lh-copy f4">
+          <div class="measure-wide center lh-copy f5 f4-ns">
             {{ .Summary }}
             {{ if (not (not (isSet $section_index.Params "show_content") | or $section_index.Params.show_content)) | and (ne $section_index.Content $section_index.Summary | or (ge $section_count 1)) }}
               <p><a href="{{ $section_index.Permalink }}">More about {{ $section_index.Title | lower }}…</a></p>
