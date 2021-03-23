@@ -19,3 +19,25 @@
 .mr-3 {
     margin-right: -1rem;
 }
+@media (--breakpoint-large) {
+    .social > :first-child {
+        margin-left: 1rem;
+    }
+}
+.f-4,
+.f-title {
+  font-size: 4rem;
+}
+@media (--breakpoint-not-small){
+  .f-6-ns,
+  .f-title-ns { font-size: 4rem; }
+}
+@media (--breakpoint-medium) {
+  .f-4-m,
+  .f-title-m { font-size: 4rem; }
+}
+
+@media (--breakpoint-large) {
+  .f-4-l,
+  .f-title-l { font-size: 4rem; }
+}
